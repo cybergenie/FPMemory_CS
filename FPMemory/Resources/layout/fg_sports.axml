@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/item_name_sports"
+            android:text="@string/item_sports_period"
+            android:layout_weight="1"/>
+        <TextView
+            style="@style/item_name_sports"
+            android:text="@string/item_sports_item"/>
+        <TextView
+            style="@style/item_name_sports"
+            android:text="@string/item_sports_time"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/value_sports_period"
+                style="@style/item_value_sports"
+                android:gravity="center"
+                android:text="IV" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/value_sports_stride"
+                style="@style/item_value_sports"
+                android:gravity="center"
+                android:text="蹲起"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/value_sports_gait"
+                style="@style/item_value_sports"
+                android:text="60" />
+
+            <TextView
+                style="@style/item_unit_sports"
+                android:text="分钟" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:src="@drawable/sports_shape"/>
+        <TextView
+            android:id="@+id/value_METs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_black"
+            android:textSize="56sp"
+            android:text="5.2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:layout_below="@id/value_METs"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:text="METs"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="35dp"
+            android:background="@color/div_black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="@color/transparent"
+                android:src="@mipmap/tips_history"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:textColor="@color/text_black"
+                android:textSize="28sp"
+                android:text="@string/item_sports_history"/>
+
+            <ImageView
+                android:id="@+id/arrow_history"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@color/transparent"
+                android:clickable="true"
+                android:src="@drawable/arrow_right_click" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="35dp"
+            android:background="@color/div_black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="@color/transparent"
+                android:src="@mipmap/tips_finished"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:textColor="@color/text_black"
+                android:textSize="28sp"
+                android:text="@string/item_sports_finished"/>
+
+            <ImageView
+                android:id="@+id/arrow_finished"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@color/transparent"
+                android:clickable="true"
+                android:src="@drawable/arrow_right_click" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="35dp"
+            android:background="@color/div_black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="@color/transparent"
+                android:src="@mipmap/tips_nonfinished"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:textColor="@color/text_black"
+                android:textSize="28sp"
+                android:text="@string/item_sports_nonfinished"/>
+
+            <ImageView
+                android:id="@+id/arrow_nonfinished"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@color/transparent"
+                android:clickable="true"
+                android:src="@drawable/arrow_right_click" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="35dp"
+            android:background="@color/div_black" />
+
+    </LinearLayout>
+
+</LinearLayout>

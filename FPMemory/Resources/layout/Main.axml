@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white">
+    <TextView
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:height="48dp" />
+    <FrameLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragmentCanvas"
+        android:layout_below="@id/topBar" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/bottomBar"
+        android:layout_alignParentBottom="true">
+        <RadioButton
+            android:text="@string/tab_menu_sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbSports"
+            android:drawableTop="@drawable/tab_menu_sports"
+            android:checked="true"
+            android:button="@null"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/text_black" />
+        <RadioButton
+            android:text="@string/tab_menu_health"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/rbHealth"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tab_menu_health"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@color/text_black" />
+        <RadioButton
+            android:text="@string/tab_menu_find"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/rbFind"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_menu_find"
+            android:gravity="center"
+            android:textColor="@color/text_black" />
+        <RadioButton
+            android:text="@string/tab_menu_me"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/rbMe"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tab_menu_me"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@color/text_black" />
+    </RadioGroup>
+</RelativeLayout>

@@ -1,0 +1,72 @@
+﻿<resources>
+  <style name="tab_menu_item">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:button">@null</item>
+    <item name="android:gravity">center</item>
+    <item name="android:paddingTop">3dp</item>
+    <item name="android:background">@drawable/tab_menu_bg</item>
+    <item name="android:textColor">@drawable/tab_menu_text</item>
+    <item name="android:textSize">18sp</item>
+  </style>
+
+  <style name="tab_menu_top">
+    <item name="android:layout_width">90dp</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:button">@null</item>
+    <item name="android:gravity">center</item>
+    <item name="android:paddingTop">3dp</item>
+    <item name="android:background">@color/transparent</item>
+  </style>
+
+  <style name="item_name_sports">
+    <item name="android:textSize">28sp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:gravity">center_horizontal|bottom</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:textColor">@color/text_black</item>
+  </style>
+  
+  <style name="item_value_sports">
+    <item name="android:textSize">28sp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:gravity">right|bottom</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:textColor">@color/text_black</item>
+  </style>
+  <style name="item_unit_sports">
+    <item name="android:textSize">18sp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:gravity">left|bottom</item>
+    <item name="android:layout_weight">1.5</item>
+    <item name="android:textColor">@color/text_black</item>
+  </style>
+
+
+  <style name="btn_recover_item">
+    <item name="android:textSize">25sp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+  </style>
+
+  <style name="tb_rate_item">
+    <item name="android:textSize">18sp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_weight">1</item>
+  </style>
+
+  <style name="tb_sports_item">
+    <item name="android:textSize">18sp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_weight">1</item>
+  </style>
+
+</resources>

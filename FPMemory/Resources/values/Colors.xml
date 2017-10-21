@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_black">#000000</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_gray">#dddcce</color>
+    <color name="bg_red">#e71f18</color>
+
+    <color name="bg_topbar">#71c7d5</color>
+    <color name="bg_menu_sports">#71c7d5</color>
+    <color name="bg_menu_health">#71c7d5</color>
+    <color name="bg_menu_find">#71c7d5</color>
+    <color name="bg_menu_me">#71c7d5</color>
+
+
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="text_gray">#8a8a8a</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_black">#000000</color>
+    <color name="text_blue">#1296db</color>
+    <color name="text_topbar">#FFFFFF</color>
+
+    <color name="div_white">#E5E5E5</color>
+    <color name="div_gray">#8a8a8a</color>
+    <color name="div_black">#000000</color>
+    <color name="bg_green">#02ff30</color>
+    <color name="bg_yellow">#feff02</color>
+    <color name="text_red">#ff0000</color>
+
+</resources>
