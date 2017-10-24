@@ -4,24 +4,21 @@
     android:layout_height="match_parent"
     android:background="@color/bg_white"
     android:orientation="vertical">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal">
-
         <TextView
             style="@style/item_name_sports"
-            android:text="@string/item_sports_period"
-            android:layout_weight="1"/>
+            android:text="@string/item_exercise_period"
+            android:layout_weight="1" />
         <TextView
             style="@style/item_name_sports"
-            android:text="@string/item_sports_item"/>
+            android:text="@string/item_exercise_item" />
         <TextView
             style="@style/item_name_sports"
-            android:text="@string/item_sports_time"/>
+            android:text="@string/item_exercise_time" />
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="45dp"
@@ -31,7 +28,6 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:layout_weight="1">
-
             <TextView
                 android:id="@+id/value_sports_period"
                 style="@style/item_value_sports"
@@ -47,28 +43,22 @@
                 android:id="@+id/value_sports_stride"
                 style="@style/item_value_sports"
                 android:gravity="center"
-                android:text="蹲起"/>
+                android:text="蹲起" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:layout_weight="1">
-
             <TextView
                 android:id="@+id/value_sports_gait"
                 style="@style/item_value_sports"
                 android:text="60" />
-
             <TextView
                 style="@style/item_unit_sports"
                 android:text="分钟" />
         </LinearLayout>
-
-
-
     </LinearLayout>
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="240dp">
@@ -77,7 +67,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:background="@color/transparent"
-            android:src="@drawable/sports_shape"/>
+            android:src="@drawable/sports_shape" />
         <TextView
             android:id="@+id/value_METs"
             android:layout_width="wrap_content"
@@ -85,7 +75,7 @@
             android:layout_centerInParent="true"
             android:textColor="@color/text_black"
             android:textSize="56sp"
-            android:text="5.2"/>
+            android:text="5.2" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -93,15 +83,13 @@
             android:layout_below="@id/value_METs"
             android:layout_centerHorizontal="true"
             android:textSize="15sp"
-            android:text="METs"/>
+            android:text="METs" />
     </RelativeLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="bottom"
         android:orientation="vertical">
-
         <View
             android:layout_width="match_parent"
             android:layout_height="2px"
@@ -109,7 +97,6 @@
             android:layout_marginLeft="60dp"
             android:layout_marginRight="35dp"
             android:background="@color/div_black" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="35dp"
@@ -121,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:background="@color/transparent"
-                android:src="@mipmap/tips_history"/>
+                android:src="@mipmap/tips_history" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -130,8 +117,7 @@
                 android:background="@color/transparent"
                 android:textColor="@color/text_black"
                 android:textSize="28sp"
-                android:text="@string/item_sports_history"/>
-
+                android:text="@string/item_exercise_history" />
             <ImageView
                 android:id="@+id/arrow_history"
                 android:layout_width="45dp"
@@ -142,7 +128,6 @@
                 android:clickable="true"
                 android:src="@drawable/arrow_right_click" />
         </LinearLayout>
-
         <View
             android:layout_width="match_parent"
             android:layout_height="2px"
@@ -150,7 +135,6 @@
             android:layout_marginLeft="60dp"
             android:layout_marginRight="35dp"
             android:background="@color/div_black" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="35dp"
@@ -162,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:background="@color/transparent"
-                android:src="@mipmap/tips_finished"/>
+                android:src="@mipmap/tips_finished" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -171,8 +155,7 @@
                 android:background="@color/transparent"
                 android:textColor="@color/text_black"
                 android:textSize="28sp"
-                android:text="@string/item_sports_finished"/>
-
+                android:text="@string/item_exercise_finished" />
             <ImageView
                 android:id="@+id/arrow_finished"
                 android:layout_width="45dp"
@@ -183,7 +166,6 @@
                 android:clickable="true"
                 android:src="@drawable/arrow_right_click" />
         </LinearLayout>
-
         <View
             android:layout_width="match_parent"
             android:layout_height="2px"
@@ -191,7 +173,6 @@
             android:layout_marginLeft="60dp"
             android:layout_marginRight="35dp"
             android:background="@color/div_black" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="35dp"
@@ -203,7 +184,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:background="@color/transparent"
-                android:src="@mipmap/tips_nonfinished"/>
+                android:src="@mipmap/tips_nonfinished" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -212,8 +193,7 @@
                 android:background="@color/transparent"
                 android:textColor="@color/text_black"
                 android:textSize="28sp"
-                android:text="@string/item_sports_nonfinished"/>
-
+                android:text="@string/item_exercise_nonfinished" />
             <ImageView
                 android:id="@+id/arrow_nonfinished"
                 android:layout_width="45dp"
@@ -231,7 +211,5 @@
             android:layout_marginLeft="60dp"
             android:layout_marginRight="35dp"
             android:background="@color/div_black" />
-
     </LinearLayout>
-
 </LinearLayout>

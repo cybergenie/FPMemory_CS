@@ -6,6 +6,7 @@ using System.Text;
 using Android.App;
 using Android.Content;
 using Android.OS;
+using Android.Graphics;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
@@ -18,13 +19,13 @@ namespace FPMemory
     {
         public static int dip2px(Context context, float dpValue)
         {
-            float scale = Resources.System.DisplayMetrics.Density; 
+            float scale = context.Resources.DisplayMetrics.Density; 
             return (int)(dpValue * scale + 0.5f);
         }
 
         public static int px2dip(Context context, float pxValue)
         {
-            float scale = Resources.System.DisplayMetrics.Density;
+            float scale = context.Resources.DisplayMetrics.Density;
             return (int)(pxValue / scale + 0.5f);
         }
     }
