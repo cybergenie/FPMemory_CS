@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using Android.Support.V4.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using Android.Support.V4.App;
 
 namespace FPMemory
 {
-    public class FragmentMe : Fragment
+    public class FragmentBloodoxygen : Fragment
     {
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -24,8 +24,10 @@ namespace FPMemory
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            View view = inflater.Inflate(Resource.Layout.fg_me, container, false);
-            return view;
+            // Use this to return your custom view for this Fragment
+            // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
+
+            return base.OnCreateView(inflater, container, savedInstanceState);
         }
     }
 }

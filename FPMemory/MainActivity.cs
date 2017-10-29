@@ -1,4 +1,5 @@
-﻿using Android.App;
+﻿using Android.Support.V4.App;
+using Android.App;
 using Android.Widget;
 using Android.OS;
 using Android.Graphics.Drawables;
@@ -6,7 +7,7 @@ using Android.Graphics.Drawables;
 namespace FPMemory
 {
     [Activity(Label = "FPMemory", MainLauncher = true, Icon = "@mipmap/icon")]
-    public class MainActivity : Activity,RadioGroup.IOnCheckedChangeListener
+    public class MainActivity : FragmentActivity, RadioGroup.IOnCheckedChangeListener
     {
         private RadioGroup rgBottomBar;
         private RadioButton rbExercise;
@@ -14,8 +15,8 @@ namespace FPMemory
         private RadioButton rbFind;
         private RadioButton rbMe;
 
-        
-        FragmentTransaction ft = null;
+
+        Android.Support.V4.App.FragmentTransaction ft = null;
         FragmentExercise fgExercise = null;
         FragmentHealth fgHealth = null;
         FragmentFind fgFind = null;
@@ -66,7 +67,7 @@ namespace FPMemory
 
         public void OnCheckedChanged(RadioGroup group, int checkedId)
         {
-            ft = FragmentManager.BeginTransaction();            
+            ft = SupportFragmentManager.BeginTransaction();            
             TextView tvTopBar = FindViewById<TextView>(Resource.Id.txTopBar);
             hideFragment(ft);
 
@@ -117,7 +118,7 @@ namespace FPMemory
 
         }
 
-        private void hideFragment(FragmentTransaction transaction)
+        private void hideFragment(Android.Support.V4.App.FragmentTransaction transaction)
         {
             if (fgExercise != null)
             {

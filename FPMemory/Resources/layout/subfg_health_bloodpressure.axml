@@ -3,18 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/tab_menu_bg">
-
     <LinearLayout
         android:id="@+id/bloodpressure_reslut"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:orientation="vertical">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp">
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -24,19 +21,16 @@
                 android:textColor="@color/text_blue"
                 android:textSize="30sp" />
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:orientation="vertical">
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/bg_gray"
                 android:orientation="horizontal">
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -45,7 +39,6 @@
                     android:text="高压"
                     android:textColor="@color/text_black"
                     android:textSize="18sp" />
-
                 <TextView
                     android:id="@+id/high_value_bloodpressure"
                     android:layout_width="match_parent"
@@ -56,7 +49,6 @@
                     android:textColor="@color/text_black"
                     android:textSize="30sp"
                     android:textStyle="bold" />
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -65,16 +57,13 @@
                     android:text="mmHg"
                     android:textColor="@color/text_black"
                     android:textSize="18sp" />
-
             </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/bg_gray"
                 android:orientation="horizontal">
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -83,7 +72,6 @@
                     android:text="低压"
                     android:textColor="@color/text_black"
                     android:textSize="18sp" />
-
                 <TextView
                     android:id="@+id/lower_value_bloodpressure"
                     android:layout_width="match_parent"
@@ -94,7 +82,6 @@
                     android:textColor="@color/text_black"
                     android:textSize="30sp"
                     android:textStyle="bold" />
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -103,34 +90,26 @@
                     android:text="mmHg"
                     android:textColor="@color/text_black"
                     android:textSize="18sp" />
-
             </LinearLayout>
-
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:orientation="horizontal">
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center_vertical|right">
-
                 <ImageView
                     android:layout_width="48dp"
                     android:layout_height="32dp"
                     android:layout_marginRight="10dp"
                     android:src="@mipmap/pass" />
-
             </LinearLayout>
-
-
             <TextView
                 android:id="@+id/result_bloodpressure"
                 android:layout_width="wrap_content"
@@ -140,12 +119,8 @@
                 android:text="正常"
                 android:textColor="@color/text_black"
                 android:textSize="30sp" />
-
         </LinearLayout>
-
-
     </LinearLayout>
-
     <RelativeLayout
         android:id="@+id/recycleview"
         android:layout_width="match_parent"
@@ -154,7 +129,6 @@
         android:layout_below="@id/bloodpressure_reslut"
         android:background="@color/bg_white"
         android:orientation="vertical">
-
         <TextView
             android:id="@+id/recycleview_head"
             android:layout_width="match_parent"
@@ -167,14 +141,11 @@
             android:text="历史纪录"
             android:textColor="@color/text_black"
             android:textSize="20sp" />
-
         <android.support.v7.widget.RecyclerView
             android:id="@+id/heartrate_history"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/recycleview_head"
-
             android:scrollbars="vertical" />
     </RelativeLayout>
-
 </RelativeLayout>

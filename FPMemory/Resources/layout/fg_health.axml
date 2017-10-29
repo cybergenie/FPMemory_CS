@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="10dp">
         <RadioGroup
-            android:id="@+id/rg_sports_bar"
+            android:id="@+id/rg_health_bar"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:background="@color/bg_white"
@@ -45,9 +45,9 @@
 <!--android:scaleType="matrix"-->
 <!--android:src="#fff" />-->
 <!--</LinearLayout>-->
-<!--<android.support.v4.view.ViewPager
+    <android.support.v4.view.ViewPager
         android:id="@+id/vPager"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center" />-->
+        android:layout_gravity="center" />
 </LinearLayout>
